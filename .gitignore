@@ -1,0 +1,7 @@
+*.ipynb
+.pytest_cache
+*/__pycache__/
+__pycache__/
+*.log
+*.xml
+.eggs/

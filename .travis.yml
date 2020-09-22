@@ -1,0 +1,12 @@
+language: python
+python:
+  - 3.6
+install:
+  - pip install codecov
+script:
+  - ./setup.py test
+env:
+  - CODECOV_TOKEN="1f2406a0-ac7b-41b2-b93f-57eed633f2b7"
+after_success:
+  - codecov
+
