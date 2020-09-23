@@ -1,4 +1,5 @@
 import re
+from random import randint
 
 class Hangman():
     def __init__(self):
@@ -41,5 +42,6 @@ class Hangman():
 
 
 if __name__ == "__main__":
+    words_list = ['hello', 'world', 'goodbye', 'heaven']
     hang = Hangman()
-    hang.play("Hello", 5)
+    hang.play(words_list[randint(0, 4)], 5)
