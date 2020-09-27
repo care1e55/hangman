@@ -42,11 +42,3 @@ def test_mistake():
     mistakes_count, hidden = hang.gues("x", "test", ["*", "*", "*", "*"], 0, 5)
     assert mistakes_count == 1
     assert "".join(hidden) == "****"
-
-def test_game():
-    pass
-    # words_list = ['hello', 'world', 'goodbye', 'heaven']
-    # sys.stdin = StringIO(inputs)
-    # hang.play(words_list[randint(0, 4)], 5)
-
-
